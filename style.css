@@ -444,12 +444,91 @@ outline: none;
 background-color: rgb(255,255,255,0.4);
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
-
+  .nav-logo {
+    margin: 10px 0;
+  }
+  .nav-address,
+  .nav-signin,
+  .nav-return,
+  .nav-cart {
+    display: none;
+  }
+  .nav-search {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .panel {
+    flex-direction: column;
+    align-items: center;
+  }
+  .panel-all {
+    margin-right: auto;
+  }
+  .panel-deal {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-address,
+  .nav-signin,
+  .nav-return,
+  .nav-cart {
+    display: none;
+  }
+  .nav-search {
+    width: 100%;
+    margin: 0;
+  }
+  .search-select {
+    width: 80px;
+  }
+  .panel-ops p {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .nav-search {
+    width: 400px;
+    margin: 0;
+  }
+  .search-select {
+    width: 100px;
+  }
+  .panel-all {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .shop-section {
+    justify-content: space-between;
+  }
+  .box {
+    width: 18%;
+  }
+  .box-content h2 {
+    font-size: 1rem;
+  }
+  .today_deal_item {
+    min-width: 200px;
+    width: 200px;
+  }
+  .today_deal_item img {
+    min-height: 140px;
+    padding: 10px 20px;
+  }
+  .today_deal_btn_container {
+    padding: 20px 10px;
+  }
+  .today_deal_btn {
+    padding: 20px;
+    font-size: 30px;
+  }
+}
  
 
  
